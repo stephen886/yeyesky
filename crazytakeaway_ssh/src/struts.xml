@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.ui.templateDir" value="template" />
+	<constant name="struts.ui.templateSuffix" value="ftl" />
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<package name="crazytakeaway" extends="struts-default">
+
+		<!--商家相关的Action -->
+		<!-- searchStore:搜索商店列表，viewStore：查看单一商店 -->
+		<action name="store*" class="storeAction" method="{1}">
+			<result name="success">/store{1}.jsp</result>
+		</action>
+
+		<!-- 用户相关的Action -->
+		<action name="user*" class="userAction" method="{1}">
+			<result name="success">/login.jsp</result>
+			<result name="userinfo">/userinfo.jsp</result>
+			<result name="input">/register.jsp</result>
+			<result name="succeed">/succeed.jsp</result>
+		</action>
+
+		<!--收藏的相关操作 -->
+		<action name="collect*" class="collectStoreAction" method="collect{1}">
+			<result name="success">/userCollectStore.jsp</result>
+		</action>
+
+	</package>
+</struts>   

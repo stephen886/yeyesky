@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-11-3 0:26:11 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.crazy.domain.Order" table="ORDER_tb">
+        <id name="trade_id" type="int">
+            <column name="TRADE_ID" />
+            <generator class="native" />
+        </id>
+        <property name="userid" type="int">
+            <column name="userid" />
+        </property>
+        <property name="storeid" type="int">
+            <column name="storeid" />
+        </property>
+        <property name="recAdressid" type="int">
+            <column name="recAdressid" />
+        </property>
+        <property name="order_time" type="java.util.Date">
+            <column name="ORDER_TIME" />
+        </property>
+        
+        <set name="OrderDetails" cascade="all">
+			<key column="order_id"></key>
+			<one-to-many class="com.crazy.domain.OrderDetails" />
+		</set>
+		 <many-to-one name="recAdress" column="recAdress_id" unique="true" cascade="all"></many-to-one>
+    </class>
+</hibernate-mapping>

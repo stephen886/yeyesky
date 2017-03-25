@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-11-3 0:26:11 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.crazy.domain.UserInfo" table="USERINFO_tb">
+        <id name="info_id" type="int">
+            <column name="INFO_ID" />
+            <generator class="native" />
+        </id>
+        <property name="real_name" type="java.lang.String">
+            <column name="REAL_NAME" />
+        </property>
+        <property name="sex" type="java.lang.String">
+            <column name="SEX" />
+        </property>
+        <property name="birthday" type="java.util.Date">
+            <column name="BIRTHDAY" />
+        </property>
+        <property name="adress" type="java.lang.String">
+            <column name="ADRESS" />
+        </property>
+        <property name="head_portrait" type="java.lang.String">
+            <column name="HEAD_PORTRAIT" />
+        </property>
+    </class>
+</hibernate-mapping>

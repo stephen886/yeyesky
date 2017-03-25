@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-11-3 0:26:11 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.crazy.domain.Announcement" table="ANNOUNCEMENT_tb">
+        <id name="store_id" type="int">
+            <column name="STORE_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="announ_id" type="int">
+            <column name="ANNOUN_ID" />
+        </property>
+        <property name="announcement" type="int">
+            <column name="ANNOUNCEMENT" />
+        </property>
+        <property name="announ_date" type="int">
+            <column name="ANNOUN_DATE" />
+        </property>
+    </class>
+</hibernate-mapping>

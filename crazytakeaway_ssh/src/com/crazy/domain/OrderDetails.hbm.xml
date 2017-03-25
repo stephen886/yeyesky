@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-11-3 0:26:11 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.crazy.domain.OrderDetails" table="ORDERDETAILS_tb">
+        <id name="details_ID" type="int">
+            <column name="DETAILS_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="menu_standard_id" type="int">
+            <column name="MENU_STANDARD_ID" />
+        </property>
+        <property name="amount" type="int">
+            <column name="AMOUNT" />
+        </property>
+        <property name="original_price" type="int">
+            <column name="ORIGINAL_PRICE" />
+        </property>
+        <property name="real_price" type="int">
+            <column name="REAL_PRICE" />
+        </property>
+        <property name="privilege" type="java.lang.String">
+            <column name="PRIVILEGE" />
+        </property>
+    </class>
+</hibernate-mapping>

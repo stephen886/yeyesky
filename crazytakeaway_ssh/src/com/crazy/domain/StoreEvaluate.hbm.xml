@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-11-3 0:26:11 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.crazy.domain.StoreEvaluate" table="STOREEVALUATE_tb">
+        <id name="user_id" type="int">
+            <column name="USER_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="store_evaluate_id" type="int">
+            <column name="STORE_EVALUATE_ID" />
+        </property>
+        <property name="store_id" type="int">
+            <column name="STORE_ID" />
+        </property>
+        <property name="grade" type="int">
+            <column name="GRADE" />
+        </property>
+        <property name="recommend_menu" type="int">
+            <column name="RECOMMEND_MENU" />
+        </property>
+        <property name="comment" type="int">
+            <column name="COMMENT" />
+        </property>
+        <property name="comment_date" type="int">
+            <column name="COMMENT_DATE" />
+        </property>
+    </class>
+</hibernate-mapping>

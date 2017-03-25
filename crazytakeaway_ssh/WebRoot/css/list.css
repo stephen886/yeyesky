@@ -1,0 +1,479 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+}
+
+li {
+	list-style-type: none;
+	display: list-item;
+}
+
+
+
+
+div {
+	display: block;
+}
+
+ul,
+ol {
+	padding-left: 0;
+	list-style-type: none;
+}
+
+body {
+	/*font: 12px/1.125 Microsoft Yahei, "Î¢ÈíÑÅºÚ", Arial, Helvetica, sans-serif;
+	background: #f8f8f8;
+	line-height: 1.4;
+	*/
+	
+	margin: 0;
+	padding: 0px;
+	background: #EBEBEB;
+	font-family: "Î¢ÈíÑÅºÚ";
+	line-height: 1.4;
+	color: #413F3F;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.rest-banner {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+/*======================imgsort-wrapper=============================*/
+
+.imgsort-wrapper {
+	padding: 18px 0 18px 0;
+	margin: 0 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.imgsort-filter-title {
+	position: absolute;
+	left: 0;
+	top: 26px;
+	font-size: 14px;
+	padding-left: 32px;
+	background: url(../img/icon_sort.png) no-repeat;
+}
+
+.imgsort-content {
+	width: 822px;
+	padding-left: 130px;
+}
+
+.imgsort-wrapper li.fl {
+	margin: 8px 20px 8px 0;
+}
+
+.imgsort-wrapper .imgsort-list {
+	display: block;
+	color: #000000;
+	font-size: 14px;
+}
+
+.imgsort-wrapper .hover .imgsort-info,
+.imgsort-wrapper .selected .imgsort-info {
+	color: #fa9700;
+}
+
+.imgsort-wrapper .imgsort-info {
+	text-align: center;
+	display: block;
+	color: #898989;
+}
+
+
+/*======================rest-filter=============================*/
+
+.rest-filter {
+	position: relative;
+	padding: 0 0 18px 128px;
+	margin: 0 12px;
+	border-top: 1px solid #e9e9e9;
+}
+
+.rest-filter-title {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 14px;
+	padding-left: 32px;
+	margin-top: 18px;
+	background: url(../img/icon_filter.png) no-repeat;
+}
+
+.rest-filter a {
+	font-size: 14px;
+	margin-top: 18px;
+	width: 114px;
+	float: left;
+}
+
+.rest-filter .checkbox {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	padding-bottom: 1px;
+	background-position: -3px -276px;
+	vertical-align: text-bottom;
+}
+
+.sprite {
+	background-image: url(../img/sprite_3.png);
+	_background-image: url(../img/sprite_3.png);
+}
+
+.rest-filter .checked {
+	background-position: -20px -276px;
+}
+
+.rest-filter .txt {
+	color: #535353;
+}
+
+.divider {
+	width: 980px;
+	height: 12px;
+	margin-left: -10px;
+	background: #F5F5F5;
+}
+
+
+/*======================sort-filter=============================*/
+
+.sort-filter {
+	padding-top: 11px;
+	padding-left: 10px;
+	margin-left: -10px;
+	width: 970px;
+	height: 33px;
+	font-size: 14px;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+.sort-filter a.sort {
+	height: 22px;
+	float: left;
+	line-height: 22px;
+	border-right: 1px solid #E1E1E1;
+	padding: 0 17px;
+	color: #000000;
+}
+
+.sort-filter .i-orderdown,
+.sort-filter .i-orderup {
+	margin-left: 2px;
+	vertical-align: -1px;
+}
+
+.i-orderdown {
+	width: 9px;
+	height: 10px;
+	background-position: -371px -47px;
+}
+
+.i-orderdown-click {
+	width: 9px;
+	height: 10px;
+	background-position: -410px -47px;
+}
+
+.i-orderup {
+	width: 9px;
+	height: 10px;
+	background-position: -397px -47px;
+}
+
+.i-orderup-click {
+	width: 9px;
+	height: 10px;
+	background-position: -384px -47px;
+}
+
+.sort-filter a.active {
+	color: #fa9700;
+}
+
+.sort-filter .label {
+	line-height: 22px;
+	margin-left: 17px;
+}
+
+.sort-filter .prices {
+	margin-left: 12px;
+	top: -2px;
+	float: left;
+	position: relative;
+}
+
+.sort-filter a.all {
+	color: #000000;
+	width: 78px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #E1E1E1;
+	padding-left: 20px;
+	display: block;
+	background-color: #FFFFFF;
+}
+
+.sort-filter a.all {
+	margin-left: 5px;
+}
+
+.i-triangle-dn {
+	margin-left: 2px;
+}
+
+.i-triangle-dn {
+	width: 12px;
+	height: 6px;
+	background-position: -514px -5px;
+}
+
+.sort-filter .prices ul {
+	border: 1px solid #E1E1E1;
+	position: absolute;
+	background-color: #FFFFFF;
+	top: 25px;
+	left: 5px;
+	z-index: 1;
+	display: none;
+}
+
+.sort-filter .prices li a {
+	width: 78px;
+	padding-left: 20px;
+	display: inline-block;
+	line-height: 30px;
+	color: #535353;
+}
+
+.inner-wrap {
+	width: 980px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.inner-bg {
+	background: white;
+}
+
+.preview img {
+	height: 156px;
+	width: 208px;
+	border: 1px solid #eaeaea;
+}
+
+.rest-list {
+	overflow: hidden;
+}
+
+.rest-atag {
+	width: 210px;
+	display: block;
+}
+
+.top-content {
+	height: 250px;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.rest-list .list {
+	margin: 0 5px;
+	padding-top: 10px;
+	position: relative;
+	min-height: 300px;
+	_height: 300px;
+	_overflow: visible;
+}
+
+.rest-li {
+	width: 242px;
+	height: 318px;
+}
+
+.rest-li:nth-child(4n+1) .rest-outer {
+	left: 0;
+}
+
+.rest-li:nth-child(4n+2) .rest-outer {
+	left: 242px;
+}
+
+.rest-li:nth-child(4n+3) .rest-outer {
+	left: 484px;
+}
+
+.rest-li:nth-child(4n+4) .rest-outer {
+	left: 726px;
+}
+
+.hover {
+	background-color: #f8f8f8;
+}
+
+.rest-list .transition {
+	transition: left 0.5s;
+}
+
+.rest-outer {
+	width: 210px;
+	height: 298px;
+	padding: 20px 16px 0;
+	overflow: hidden;
+}
+
+.star-ranking {
+	position: relative;
+	width: 80px;
+	height: 16px;
+	overflow: hidden;
+	display: block;
+	background: url(../img/star-matrix.gif) 0px 0px no-repeat;
+	z-index: 100;
+}
+
+.star-score {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 16px;
+	background: url(../img/star-matrix.gif) 0px -160px no-repeat;
+	display: block;
+	z-index: 120;
+}
+
+.content .name span {
+	font-size: 16px;
+	color: #313131;
+}
+
+.rank {
+	margin: 10px 0 8px;
+}
+
+.score-num {
+	color: #707070;
+	margin-left: 5px;
+}
+
+.total {
+	color: #fa9700;
+}
+
+.price {
+	color: #707070;
+}
+
+.start-price {
+	float: left;
+	width: 72px;
+}
+
+.send-price {
+	float: left;
+}
+
+.send-time {
+	float: right;
+}
+
+.send-time i {
+	vertical-align: -2px;
+	margin-right: 4px;
+}
+
+.i-poi-timer {
+	width: 14px;
+	height: 14px;
+	background-position: -272px -426px;
+}
+
+.icon {
+	background-image: url(../img/icons_559f3531_1.png);
+	background-repeat: no-repeat;
+	image-rendering: -webkit-optimize-contrast;
+	display: inline-block;
+}
+
+.others {
+	padding: 8px 0 0;
+	overflow: hidden;
+}
+
+.i-pay {
+	width: 17px;
+	height: 17px;
+	background-position: -258px -286px;
+}
+
+.discount .icon {
+	width: 17px;
+	height: 17px;
+}
+
+.discount .i-reduce {
+	background-position: -297px -44px;
+}
+
+.discount .i-first {
+	background-position: -297px -21px;
+}
+
+.discount .i-discount {
+	background-position: -85px -20px;
+}
+
+.discount .i-give {
+	background-position: -297px -90px;
+}
+
+.discount .i-group {
+	background-position: -323px -21px;
+}
+
+.rest-separate {
+	width: 940px;
+	border-top: 1px solid #dadada;
+	margin: 0 auto;
+	clear: both;
+}
+
+.rest-li{
+	font: 12px/1.125 Microsoft Yahei, "Î¢ÈíÑÅºÚ", Arial, Helvetica, sans-serif;
+	line-height: 1.4;
+	
+}

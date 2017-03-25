@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.crazy.domain.StoreCollect" table="STORECOLLECT_tb">
+		<id name="store_collect_id" type="int">
+			<column name="store_collect_id" />
+			<generator class="native" />
+		</id>
+
+		<property name="user_id" type="int">
+			<column name="user_id" />
+		</property>
+		<property name="store_id" type="int">
+			<column name="STORE_ID" />
+		</property>
+	</class>
+</hibernate-mapping>

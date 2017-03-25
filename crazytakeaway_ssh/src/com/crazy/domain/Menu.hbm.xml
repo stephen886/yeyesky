@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-10-31 17:05:14 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.crazy.domain.Menu" table="MENU_tb">
+		<id name="menu_id" type="int">
+			<column name="MENU_ID" />
+			<generator class="native" />
+		</id>
+		<property name="menu_name" type="java.lang.String">
+			<column name="MENU_NAME" />
+		</property>
+		<property name="price" type="java.lang.String">
+			<column name="PRICE" />
+		</property>
+		<property name="sales" type="int">
+			<column name="SALES" />
+		</property>
+		<property name="praise" type="int">
+			<column name="PRAISE" />
+		</property>
+		<property name="menu_img" type="java.lang.String">
+			<column name="MENU_IMG" />
+		</property>
+		<property name="limit_shop" type="int">
+			<column name="LIMIT_SHOP" />
+		</property>
+		<property name="menu_tag" type="java.lang.String">
+			<column name="MENU_TAG" />
+		</property>
+	</class>
+</hibernate-mapping>

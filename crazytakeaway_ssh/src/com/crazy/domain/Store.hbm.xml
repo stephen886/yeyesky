@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-10-30 16:49:05 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.crazy.domain.Store" table="store_tb">
+
+
+
+
+
+		<id name="store_id" type="int">
+			<column name="store_id" />
+			<generator class="native" />
+		</id>
+
+
+
+
+		<property name="store_name" type="java.lang.String">
+			<column name="STORE_NAME" />
+		</property>
+		<property name="start_price" type="int">
+			<column name="START_PRICE" />
+		</property>
+		<property name="express_free" type="int">
+			<column name="EXPRESS_FREE" />
+		</property>
+		<property name="contact" type="java.lang.String">
+			<column name="CONTACT" />
+		</property>
+		<property name="store_img" type="java.lang.String">
+			<column name="STORE_IMG" />
+		</property>
+		<!-- constrained 告诉当前主键，你的值时采用另个表中的主键的值 当前主键对于有关系的另一个表来说就是外键。 -->
+
+
+		<many-to-one name="storeAdress" column="storeAdressid"
+			unique="true" cascade="all"></many-to-one>
+
+		<set name="menulist" cascade="all">
+			<key column="store_id"></key>
+			<one-to-many class="com.crazy.domain.Menu" />
+		</set>
+
+
+	</class>
+</hibernate-mapping>
