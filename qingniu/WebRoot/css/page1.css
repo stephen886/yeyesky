@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-family:"微软雅黑";}
+
+.shopbox{width:1150px;height:520px;margin:0 auto;}
+.samplebox{width:620px;height:520px;float:left;}
+#sampleimg{width:620px;height:410px;}
+#img{width:102px;height:70px;margin-top:10px;float:left;border:2px solid white;margin-left:15px;}
+
+/*价钱*/
+#jiaqian{ width:510px; height:480px; float:right; margin-top:0px;}
+#tou{ width:510px; height:140px; background-color:#F3F3F3;}
+#qian{ width:240px; height:140px; float:left;}
+.yen{ color:#F60; font-size:36px; font-weight:bold; margin-left:30px; margin-top:20px;}
+.yen span{ color:#F60; font-size:48px; font-family:"微软雅黑"; font-weight:bbold;}
+.bao{ background-color:#F06; font-size:12px; color:#FFF; width:150px; height:20px; font-weight:bold; text-align:center; margin-left:20px; padding-top:5px;}
+
+
+/*打折*/
+.dazhe{ width:270px; height:140px; float:left;}
+.zhe{ width:150px; height:45px; float:right; margin-top:45px;}
+.zhe span{ float:left; color:#9D9D9D; font-weight:bold; font-size:18px; }
+.zhe span span{ font-size:12px; margin-left:8px; margin-top:7px;}
+#fgx{ width:1px; height:45px; background:#9d9d9d; float:left; margin-left:25px; margin-right:25px;}
+.jiazhibox{width:50px;height:50px;float:left;position:relative;}
+.jiazhibox hr{position:absolute;margin-top:12px; }
+#jiazhi{font-size:20px;width:50px;height:30px;margin-top:0px;}
+.jiazhibox span{font-size:12px;margin-top:2px;}
+
+
+/*原料*/
+#yl{ width:560px; height:145px; float:left;}
+#yl p{ color:#999; font-weight:bold; font-family:"微软雅黑"; font-size:18px; font-weight:bold; padding:0; margin:10px auto;margin-left:20px;}
+.y{ float:left; width:560px; height:100px;}
+.y ul{ list-style:none; float:left; padding:0; margin:5px;  width:510px;}
+.y ul li{ color:#8A0000; font-size:14px; font-family:"微软雅黑"; float:left; margin-left:60px;}
+
+
+/*数量*/
+#sl{ width:560px; height:22px; float:left; color:#CCC; font-size:14px; font-weight:bold; font-family:"微软雅黑"; margin-top:10px;}
+#sl span{ margin-left:20px; float:left;color:#999;font-size:16px;}
+.jian{ width:22px; height:22px; float:left; margin-left:30px;}
+.yi{ width:60px; height:20px; float:left; border-bottom:1px solid #ccc; border-top:1px solid #CCC; text-align:center;}
+.yi label{color:#666;}
+.jia{ width:22px; height:22px; float:left; margin-right:30px;}
+
+
+/*一键购买*/
+#yj img{ margin-top:50px;margin-left:50px;}
+
+
+/*收藏 分享*/
+#sc{ width:1280px; height:25px; margin-top:30px; float:left}
+#sc img{float:left; margin-left:5px;}
+#sc a{ float:left; margin-left:5px;}
+#sc a:link,#sc a:visited{ color:#CCC; font-family:"微软雅黑"; font-weight:bold; font-size:13px; text-decoration:none;}
+#sc a:hover{ color:#F90; font-family:"微软雅黑"; font-weight:bold; font-size:13px; text-decoration:none;}
+
+.videobox{width:1150px;height:520px;margin:0 auto;}
+#video{margin-top:15px;}
+
+/*内容框*/
+.contentbox{width:1150px;height:1400px;margin:0 auto;border:1px solid red;}
+
+.techbox{width:550px;height:1400px;float:left;}
+
+#techtitle{width:550px;height:50px;}
+#techtitle p{width:450px; color:#333; font-family:"微软雅黑"; font-size:20px; font-weight:bold; margin-bottom:5px;  }
+.tt_y{ width:100px; height:3px; background-color:#FF8A3C; float:left; position:relative; z-index:1;}
+.tt_h{ width:550px; height:1px; background-color:#999; float:left; position:absolute; margin-top:1px; }
+
+.techlist{width:550px; height:220px; margin-bottom:25px;float:left;}
+.techlist span{width:30px; height:220px;margin:0 auto;float:left; font-size:18px; color:#CCCCCC; font-weight:bold;}
+.techtxt{width:300px; height:220px;margin:0 auto;float:left;color:#666;}
+.techimg{color:#666;width:200px; height:200px; float:right;}
+
+/*关注*/
+#gz{ width:480px; height:450px; float:right;}
+.sj{ width:480px; height:180px; float:left; background-color:#F7F7F7;}
+.cf{ width:230px; height:80px; float:left;}
+.cf img{ margin:10px; float:left;}
+.cf ul{ list-style:none; float:left; margin-left:0px; padding:0; margin-top:10px; width:150px;}
+.cf ul li span{ color:#666;font-family:"微软雅黑"; font-weight:bold; font-size:14px; margin-left:0px;}
+.cf ul li img{ margin-left:0px;}
+.jgz{ width:100px; height:35px; float:right; text-align:center; padding-top:10px; margin-top:10px; margin-right:20px;}
+
+/*菜谱粉丝*/
+.cpcf{ width:380px; height:100px; float:left;}
+.cp{ width:250px; height:60px; float:left;  margin-left:65px; }
+.cp p{ color:#F90; font-family:"微软雅黑"; font-weight:bold; font-size:25px; float:left; width:80px;}
+#cf{ color:#666; font-family:"微软雅黑"; font-weight:bold; font-size:14px;}
+.cp div{ width:1px; height:50px; background-color:#666; float:left; margin-left:40px; margin-right:40px; margin-top:5px;}
+
+/*西梅*/
+.xm{ width:300px; float:left;}
+.xm ul li {line-height:30px; color:#ccc; font-family:"微软雅黑"; font-size:15px; list-style:none;}
+.xm ul li a:link,.xm ul li a:visited{ text-decoration:none;color:#666;}
+.xm ul li a:hover{color:#FF8A3C;}
+
+/*相关视频*/
+.xgsp{ width:450px; height:480px; float:right;}
+.xgsp p{width:450px; color:#333; font-family:"微软雅黑"; font-size:20px; font-weight:bold; margin-bottom:5px; margin-left:20px; float:left;}
+#yh{ float:left; width:340px; height:5px; margin-left:20px;}
+.yellow{ width:85px; height:3px; background-color:#FF8A3C; float:left; position:relative; z-index:1;}
+.hui{ width:420px; height:1px; background-color:#999; float:left; position:absolute; margin-top:1px; }
+
+#relative_v ul{ list-style:none; padding:0; margin:0;}
+#relative_v img{ float:left; margin-left:0px; margin-top:10px;width:200px;height:150px;}
+#relative_v ul li{width:200px;height:200px;float:left;margin-left:20px;margin-top:10px;}
+#relative_v ul li a:link,#rv ul li a:visited{ color:#666;}
+#relative_v ul li a:hover{ color:#FF8A3C;}
+
+.qnxh{ width:450px; height:600px; float:right;}
+.qnxh p{width:450px; color:#333; font-family:"微软雅黑"; font-size:20px; font-weight:bold; margin-bottom:5px; margin-left:20px; float:left;}
+
+#rv{ width:450px; float:left; height:500px;}
+#rv ul{ list-style:none; padding:0; margin:0;}
+#rv ul li img{ float:left; margin-left:0px; margin-top:20px;width:180px;height:120px;}
+#rv ul li{width:200px;height:150px;float:left;margin-left:20px;margin-top:10px;}
+#rv ul li a:link,#rv ul li a:visited{ color:#666;}
+#rv ul li a:hover{ color:#FF8A3C;}
+.xq{ float:left; margin-left:30px; margin-top:5px; color:#666; text-decoration:none;font-family:"微软雅黑"; font-size:15px;}
+

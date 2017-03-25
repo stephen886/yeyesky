@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+body{font-family:"微软雅黑"; font-size:14px; }
+a:link,a:visited{ text-decoration:none; color:#333;}
+a:hover{color:#e54346; text-decoration:underline;}
+.w{ width:1000px; margin:0 auto; margin-top:20px; }
+img{ border:none;}
+
+.changbg{ background-color:#ffebeb;}
+
+.checkItem{ width:16px; height:16px; padding-right:20px; float:left;}
+.selectAll{ width:16px; height:16px;}
+
+.t-checkbox span{margin-left:5px;}
+.content{ width:990px; margin:0 auto;}
+.cart-bar{ width:990px; padding:10px 0; }
+.cart-bar span{ font-size:18px; height:40px;  }
+.cart-bar span a{color:#e4393c;}
+.cart-thead{ padding:10px; font-size:14px; height:30px;background-color:#f8f8f8; border:1px solid silver;}
+.t-checkbox{ width:133px; float:left;}
+.t-goods{ width:208px; float:left;}
+.t-props{ width:180px; height:20px; float:left;}
+.t-price{ width:140px; float:left;}
+.t-quantity{ width:100px; float:left;}
+.t-sum{ width:100px; float:left;}
+.t-action{ width:80px; float:left;}
+
+.item-form{ padding:10px; height:40px; margin-top:20px; }
+.p-goods{ width:365px;  margin-left:20px; float:left; }
+.p-img{  float:left;}
+.p-img img{ width:80px; height:40px;}
+.p-msg{ float:left; width:266px; margin-left:10px;}
+.p-props{ width:120px; height:40px; float:left;}
+.p-price{ width:120px; float:left; }
+.p-quantity{ width:120px; float:left; }
+.p_number{ width:20px; height:16px; padding:0 5px;}
+.reduce{width:16px; height:20px;}
+.increase{width:16px; height:20px;}
+.p-sum{width:100px; float:left; }
+
+
+
+.emptycart{ width:990px; height:200px; margin:0 auto;}
+.eptxt{  width:600px; margin:100px auto; font-size:16px; }
+.eptxt a{ color:#e54346;}
+
+#middle {
+	position: relative;
+	width: 990px;
+	height: auto;
+	margin-left: 5%;
+	margin-top: 30px;
+	margin:0 auto;
+}
+
+
+.guessyoulike {
+	height: 310px;
+	width: 100%;
+	margin-top: 20px;
+}
+.youlike {
+	height: 40px;
+	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #F06;
+	font-size: 20px;
+	line-height: 30px;
+}
+.cargo {
+	float: left;
+	height: 260px;
+	width: 180px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.cargos {
+	height: 275px;
+	width: 990px;
+	float: left;
+}
+
+.changeCargo {
+	float: right;
+	height: 260px;
+	width: 180px;
+	margin-top: 10px;
+	margin-left: 0px;
+}
+.changeCargo img {
+	height: 160px;
+	width: 160px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 50px;
+}
+
+
+.cargo img  {
+	margin: 10px;
+	height: 160px;
+	width: 160px;
+}
+.cargo .description {
+	text-align:left;
+	height: 45px;
+	width: 16.px;
+	width: 160px;
+	font-size: 14px;
+	line-height: 20px;
+}
+.cargo .price {
+	text-align: left;
+	float: left;
+	font-size: 16px;
+	color: #F03;
+	height: 30px;
+	width: 80px;
+	line-height: 30px;
+}
+
+#orderinfo{ padding:20px; margin-top:20px; margin-bottom:50px; width:950px; border:1px solid silver;}
+#sum{  letter-spacing:12px; color:#e54346; font-size:16px; font-weight:bold;}
+#total-price{letter-spacing:5px;}
+#receiver{ letter-spacing:5px;margin-top:20px;}
+#rcellphone{ margin-top:20px;}
+#raddress{ margin-top:20px; width:500px;}

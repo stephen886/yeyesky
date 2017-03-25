@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <filter>
+    <display-name>Filter_login</display-name>
+    <filter-name>Filter_login</filter-name>
+    <filter-class>filter.Filter_login</filter-class>
+  </filter>
+  <filter>
+    <display-name>Filter_encode</display-name>
+    <filter-name>Filter_encode</filter-name>
+    <filter-class>filter.Filter_encode</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filter_login</filter-name>
+    <url-pattern>/Filter_login</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>Filter_encode</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Servlet_register</servlet-name>
+    <servlet-class>controller.Servlet_register</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Servlet_login</servlet-name>
+    <servlet-class>controller.Servlet_login</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetProduct_Json</servlet-name>
+    <servlet-class>getJson.GetProduct_Json</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetUser_Json</servlet-name>
+    <servlet-class>getJson.GetUser_Json</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Servlet_index</servlet-name>
+    <servlet-class>controller.Servlet_index</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Servlet_product</servlet-name>
+    <servlet-class>controller.Servlet_product</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Servlet_SendEmail</servlet-name>
+    <servlet-class>controller.Servlet_SendEmail</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Guessyoulike_Json</servlet-name>
+    <servlet-class>getJson.Guessyoulike_Json</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Servlet_addcart</servlet-name>
+    <servlet-class>controller.Servlet_addcart</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Servlet_showcart</servlet-name>
+    <servlet-class>controller.Servlet_showcart</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Servlet_delcart</servlet-name>
+    <servlet-class>controller.Servlet_delcart</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Servlet_getCartNum</servlet-name>
+    <servlet-class>controller.Servlet_getCartNum</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Servlet_updatecart</servlet-name>
+    <servlet-class>controller.Servlet_updatecart</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Servlet_guess</servlet-name>
+    <servlet-class>controller.Servlet_guess</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servlet_getName</servlet-name>
+    <servlet-class>controller.servlet_getName</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Servlet_getSearch</servlet-name>
+    <servlet-class>controller.Servlet_getSearch</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Servlet_showorder</servlet-name>
+    <servlet-class>controller.Servlet_showorder</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Servlet_addorder</servlet-name>
+    <servlet-class>controller.Servlet_addorder</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>Servlet_register</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet_login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet_index</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet_product</servlet-name>
+    <url-pattern>/product</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetProduct_Json</servlet-name>
+    <url-pattern>/GetProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetUser_Json</servlet-name>
+    <url-pattern>/GetUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet_SendEmail</servlet-name>
+    <url-pattern>/SendEmail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Guessyoulike_Json</servlet-name>
+    <url-pattern>/Guessyoulike</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet_addcart</servlet-name>
+    <url-pattern>/addcart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet_showcart</servlet-name>
+    <url-pattern>/showcart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet_delcart</servlet-name>
+    <url-pattern>/delcart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet_getCartNum</servlet-name>
+    <url-pattern>/getCartNum</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet_updatecart</servlet-name>
+    <url-pattern>/updatecart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet_guess</servlet-name>
+    <url-pattern>/guess</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servlet_getName</servlet-name>
+    <url-pattern>/getName</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet_getSearch</servlet-name>
+    <url-pattern>/getSearch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet_showorder</servlet-name>
+    <url-pattern>/showorder</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Servlet_addorder</servlet-name>
+    <url-pattern>/addorder</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index</welcome-file>
+  </welcome-file-list>
+  <login-config>
+    <auth-method>BASIC</auth-method>
+  </login-config>
+  <filter>
+    <display-name>Filter_admin</display-name>
+    <filter-name>Filter_admin</filter-name>
+    <filter-class>filter.Filter_admin</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filter_admin</filter-name>
+    <url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+</web-app>

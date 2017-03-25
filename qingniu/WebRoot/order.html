@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link type="text/css" rel="stylesheet" href="css/order.css" />
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="js/order.js"></script>
+</head>
+
+<body onload="selectAll()">
+	<div class="content">
+    	<div class="cart-bar">
+        	<span>全部商品</span>
+        </div>
+        <div class="ht-cart">
+            	<div class="cart-thead">
+                	<div class="t-checkbox">
+                    	<span>选择</span>
+                    </div>
+                    <div class="t-goods">商品</div>
+                    <div class="t-props"></div>
+                    <div class="t-price">单价（元）</div>
+                    <div class="t-quantity">数量</div>
+                    <div class="t-sum">小计（元）</div>
+                    <div class="t-action">操作</div>
+                </div>
+                <div id="cart-list">
+                
+                    	<div class="item-form">
+                        	
+                            <input type="checkbox" class="checkItem" name="checkItem" />
+                            
+                            <div class="p-goods">
+                            	<div class="p-img">
+                                	<a href="#"><img src="images/xia01.jpg" /></a>
+                                </div>
+                                <div class="p-msg">
+                                	 <a href="#">品鲜猫 爱尔兰熟冻面包蟹 600g-800g 母黄金蟹 进口海鲜</a>
+                                </div>
+                            </div>
+                            <div class="p-props">
+                            </div>
+                           
+                            <span class="p-price">69.50</span>
+                          
+                            <div class="p-quantity">
+                             	<button class="reduce" onclick="reduce()">-</button>
+                            	<input class="p_number" type="text" maxlength="2" value="1" />
+                                <button class="increase" onclick="increase()">+</button>
+                            </div>
+                           
+                            <span class="p-sum">69.50</span>
+                          
+                            <div class="p-ops">
+                            	<a href="#">删除</a>
+                            </div>
+                        </div>
+                        
+                        <div class="item-form">
+                        	
+                            <input type="checkbox" class="checkItem" name="checkItem" />
+                            
+                            <div class="p-goods">
+                            	<div class="p-img">
+                                	<a href="#"><img src="images/xia01.jpg" /></a>
+                                </div>
+                                <div class="p-msg">
+                                	 <a href="#">品鲜猫 爱尔兰熟冻面包蟹 600g-800g 母黄金蟹 进口海鲜</a>
+                                </div>
+                            </div>
+                            <div class="p-props">
+                            </div>
+                            <div class="p-price">
+                            	69.00
+                            </div>
+                            <div class="p-quantity">
+                             	<button class="reduce" onclick="reduce()">-</button>
+                            	<input class="p_number" type="text" maxlength="2" value="1" />
+                                <button class="increase" onclick="increase()">+</button>
+                            </div>
+                            <div class="p-sum">
+                            	<span>69.00</span>
+                            </div>
+                            <div class="p-ops">
+                            	<a href="#">删除</a>
+                            </div>
+                        </div>
+                        
+                        <div class="item-form">
+                        	
+                            <input type="checkbox" class="checkItem" name="checkItem" />
+                            
+                            <div class="p-goods">
+                            	<div class="p-img">
+                                	<a href="#"><img src="images/xia01.jpg" /></a>
+                                </div>
+                                <div class="p-msg">
+                                	 <a href="#">品鲜猫 爱尔兰熟冻面包蟹 600g-800g 母黄金蟹 进口海鲜</a>
+                                </div>
+                            </div>
+                            <div class="p-props">
+                            </div>
+                            <div class="p-price">
+                            	69.00
+                            </div>
+                            <div class="p-quantity">
+                             	<button class="reduce" onclick="reduce()">-</button>
+                            	<input class="p_number" type="text" maxlength="2" value="1" />
+                                <button class="increase" onclick="increase()">+</button>
+                            </div>
+                            <div class="p-sum">
+                            	<span>69.00</span>
+                            </div>
+                            <div class="p-ops">
+                            	<a href="#">删除</a>
+                            </div>
+                        </div>
+                        
+                </div>
+                <div class="cart-footbar">
+                	<div class="f-checkbox">
+                    	<input type="checkbox" class="selectAll" name="selectAll"  />
+                        <span>全选</span>
+                    </div>
+                    <div class="f-price">
+                    	总价：<span>&yen;<b id="total-price">0.00</b></span>
+                    </div>
+                    <div class="btn-area">
+                    	<a href="#"><span>去结算</span></a>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+    
+<div id="middle">
+
+  <div class="guessyoulike">
+  			<div class="youlike" >猜你喜欢</div>
+  	<div class="cargos">
+            	<div class="cargo">
+                  <img src="images/cargo6.jpg" width="160" height="160" /> 
+                  <div class="description">
+                            意大利猕猴桃   
+                    </div>
+                    <div class="price">￥79</div>
+             	 </div>
+                 
+                 
+                 
+                 <div class="cargo">
+                  <img src="images/cargo2.jpg" width="160" height="160" /> 
+                  <div class="description">
+                             澳洲无籽红提小粒装色泽鲜艳，小巧诱人 1kg       
+                    </div>
+                    <div class="price">￥39.9</div>
+             	 </div>
+                 
+                 
+                 <div class="cargo">
+                  <img src="images/cargo3.jpg" width="160" height="160" /> 
+                  <div class="description">
+                             澳洲120天谷饲西冷牛排      
+                   </div>
+                    <div class="price">￥35</div>
+             	 </div>
+                 
+                 
+                 
+                 <div class="cargo">
+                  <img src="images/cargo5.jpg" width="160" height="160" /> 
+                  <div class="description">
+                             海买大西洋三文鱼段 260g
+  
+                    </div>
+                    <div class="price">￥49</div>
+             	 </div>
+            
+                 <div class="changeCargo">
+   			 		<img src="images/change1.png" alt="" width="200" height="200" /> 
+   			 	</div>
+           	 <!-- end . cargos-->     
+          </div>     
+                  
+        <!-- end . guessyoulike-->
+        </div>
+
+<!-- end .middle -->
+</div>
+
+</body>
+</html>
