@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <title></title>  
+    <link rel="stylesheet" href="css/pintuer.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/pintuer.js"></script>  
+</head>
+<body>
+<form method="post" action="">
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 留言管理</strong></div>
+    
+    <table class="table table-hover text-center" style="table-layout: fixed;">
+      <tr>
+        <th width="15%">作者</th>       
+        <th width="15%">标题</th>
+        <th width="40%">内容</th>
+        <th width="15%">留言时间</th>
+        <th width="15%">标题</th>
+      </tr>      
+        <tr class="announce">
+          <td ><span>神夜</span></td>  
+          <td ><div><span>深圳市民治街道</span></div></td>         
+          <td ><div><span>这是一套后台UI，喜欢的朋友请多多支持谢谢。这是一套后台UI，喜欢的朋友请多多支持谢谢。这是一套后台UI，喜欢的朋友请多多支持谢谢。</span></div></td>
+          <td ><span>2016-07-01</span></td>
+          <td ><div class="button-group"> <a class="button border-main" href="javascript:void(0)" > 查看</a> </div></td>
+        </tr>
+        <tr class="announce">
+          <td ><span>神夜</span></td>  
+          <td ><div><span>深圳市民治街道</span></div></td>         
+          <td ><div><span>这是一套后台UI，喜欢的朋友请多多支持谢谢。这是一套后台UI，喜欢的朋友请多多支持谢谢。这是一套后台UI，喜欢的朋友请多多支持谢谢。</span></div></td>
+          <td ><span>2016-07-01</span></td>
+          <td ><div class="button-group"> <a class="button border-main" href="javascript:void(0)" > 查看</a> </div></td>
+        </tr>
+        <tr class="announce">
+          <td ><span>神夜</span></td>  
+          <td ><div><span>深圳市民治街道</span></div></td>         
+          <td ><div><span>这是一套后台UI，喜欢的朋友请多多支持谢谢。这是一套后台UI，喜欢的朋友请多多支持谢谢。这是一套后台UI，喜欢的朋友请多多支持谢谢。</span></div></td>
+          <td ><span>2016-07-01</span></td>
+          <td ><div class="button-group"> <a class="button border-main" href="javascript:void(0)" > 查看</a> </div></td>
+        </tr>
+       <tr>
+        <td colspan="8"><div class="pagelist"> <a href="">上一页</a> <span class="current">1</span><a href="">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a> </div></td>
+      </tr>
+    </table>
+  </div>
+</form>
+<script type="text/javascript">
+
+function del(id){
+	if(confirm("您确定要删除吗?")){
+		
+	}
+}
+
+$("#checkall").click(function(){ 
+  $("input[name='id[]']").each(function(){
+	  if (this.checked) {
+		  this.checked = false;
+	  }
+	  else {
+		  this.checked = true;
+	  }
+  });
+})
+
+function DelSelect(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		var t=confirm("您确认要删除选中的内容吗？");
+		if (t==false) return false; 		
+	}
+	else{
+		alert("请选择您要删除的内容!");
+		return false;
+	}
+}
+
+</script>
+</body></html>

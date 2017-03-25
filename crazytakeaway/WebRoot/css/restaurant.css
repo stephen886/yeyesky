@@ -1,0 +1,330 @@
+* {}
+
+body {
+	margin: 0;
+	padding: 0px;
+	background: #EBEBEB;
+	font-family: "微软雅黑";
+	line-height: 1.4;
+	color: #413F3F;
+}
+
+@font-face {
+	font-family: myFirstFont;
+	src: url('Sansation_Light.ttf'), url('Sansation_Light.eot');
+	/* IE9+ */
+}
+
+.xianzhiwenzi {
+	width: 180px;
+	/*假设，5个字符的宽度是50*/
+	white-space: nowrap;
+	/*禁止换行*/
+	text-overflow: ellipsis;
+	/*文本超出隐藏*/
+	-o-text-overflow: ellipsis;
+	/*跟上面一样，只是为了兼容其他浏览器*/
+	overflow: hidden;
+	/*隐藏，跟text-overflow配合使用*/
+}
+
+img {
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #413F3F;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #413F3F;
+}
+
+div {
+	display: block;
+}
+
+
+/*-------------------中间部分----------------------------------*/
+
+.main_boady {
+	width: 100%;
+	min-width: 980px;
+	height: auto;
+	margin-top: 0px;
+	overflow: hidden;
+	/*如果取消这属性，将会无法计算高度*/
+}
+
+.inner-wrap {
+	width: 980px;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.rest_info {
+	padding: 0;
+	width: 860px;
+	height: 121px;
+	background-color: #FFFFFF;
+	position: relative;
+	float: left;
+	/*box-shadow:10px 10px black;*/
+}
+
+#rest_info_left {
+	width: 350px;
+	height: 121px;
+	float: left;
+	position: relative;
+}
+
+#rest_info_left img {
+	float: left;
+	margin: 14px;
+}
+
+#rest_info_right {
+	float: right;
+	width: 450px;
+	height: 121px;
+}
+
+.pingfen {
+	color: #737373;
+	text-align: center;
+	width: 142px;
+	height: 90px;
+	float: left;
+	margin-top: 15.5px;
+}
+
+.showdow3D {
+	float: left;
+	width: 14px;
+	height: 121px;
+	background: url(../img/3d_show.png) no-repeat;
+}
+
+.save-up-wrapper {
+	margin-top: 8px;
+	margin-left: -2px;
+	float: left;
+	width: 60px;
+	height: 65px;
+	padding: 19px 20px;
+	text-align: center;
+	background-color: #ffffff;
+	border: 1px solid #ebebeb;
+	border-left: none;
+	font-size: .7em;
+	line-height: 5px;
+}
+
+strong {
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+.widgets {
+	float: right;
+	margin-top: 20px;
+	width: 250px;
+	height: 259px;
+}
+
+.widgets .widget {
+	width: 250px;
+	margin-bottom: 10px;
+	background-color: #FFFFFF;
+}
+
+.widgets .widget .title {
+	width: 250px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #008DE1;
+}
+
+.widgets .widget .title h2 {
+	margin-left: 15px;
+	font-size: 1.1em;
+	color: #000000;
+}
+
+.widgets .widget .content {
+	width: 220px;
+	height: auto;
+	background-color: #FFFFFF;
+	padding: 15px;
+	font-size: .9em;
+	color: #008DE1;
+}
+
+.widgets .discount {
+	border: 1px solid #ebebeb;
+	padding: 10px;
+	width: 228px;
+	font-size: 0.9em;
+	line-height: 0.9em;
+}
+
+.food_nav {
+	width: 720px;
+	height: auto;
+	clear: both;
+	margin-top: 20px;
+	background-color: #FFFFFF;
+	float: left;
+}
+
+.category {
+	margin-top: -20px;
+	width: 720px;
+	height: 60px;
+	line-height: 60px;
+	background-color: #fafafa;
+}
+
+.title3 {
+	margin-left: 20px;
+	font-size: 0.98em;
+	color: #222222;
+}
+
+.pic-food-cont {
+	width: 720px;
+	height: auto;
+	border-bottom: 1px solid #ebebeb;
+	overflow: hidden;
+}
+
+.one_food {
+	float: left;
+	width: 238px;
+	height: 270px;
+	background-color: #FFFFFF;
+	border-left: 0.5px dashed #ebebeb;
+	border-bottom: 0.5px dashed #ebebeb;
+}
+
+.one_food:hover {
+	background-color: #fffdf0;
+}
+
+.one_food img {
+	width: 195px;
+	height: 146px;
+	margin: 21px 20px;
+}
+
+.one_food h4 {
+	font-size: 13px;
+	font-weight: normal;
+	margin-left: 20px;
+	font-family: "微软雅黑";
+	margin-top: 0;
+	color: #313131;
+	width: 195px;
+	height: 20px;
+	margin: 0 auto;
+}
+
+.sale-info {
+	width: 195px;
+	height: 16px;
+	margin: 0 auto;
+	/*background-color: #269ABC;*/
+	font-size: 14px;
+	color: #898989;
+}
+
+.zan {
+	color: #0391E6;
+}
+
+.zan_amont {
+	color: #D43F3A;
+}
+
+.zan-count:hover {
+	cursor: pointer;
+}
+
+.labels {
+	width: 195px;
+	height: 30px;
+	color: crimson;
+	margin: 0 auto;
+	margin-top: 7px;
+	line-height: 30px;
+}
+
+.add_top_cart {
+	line-height: 25px;
+	text-align: center;
+	clear: both;
+	float: right;
+	width: 25px;
+	height: 25px;
+	color: #000000;
+	border-radius: 3px;
+	background-color: #66AFE9;
+}
+
+.add_top_cart:hover {
+	cursor: pointer;
+}
+
+.only {
+	float: left;
+}
+
+
+#store_hiddle_info{
+	display: none;
+	width: 300px;
+	height: 90px;
+	background-color:#FFFDF0;
+	padding: 10px;
+	padding-left:25px;
+	line-height:10px;
+	/*border: solid 1px #999999;*/
+	border-top:0px ;
+	font-family: "微软雅黑";
+	color:#222222;
+	font-size: 0.9em;
+}
+
+#store_hiddle_info strong{
+	font-size: 0.9em;
+	color: #0F0F0F;
+}
+
+
+/*
+
+
+
+
+.cate-tab-area {
+	width: 720px;
+	height: 240px;
+	float: left;
+	background-color: yellow;
+}
+*/
+
+
+/*-------------------脚部分----------------------------------*/
+
+.bottom {
+	width: 100%;
+	min-width: 980px;
+	height: 380px;
+	margin-top: 80px;
+	background-color: #5DB423;
+}
