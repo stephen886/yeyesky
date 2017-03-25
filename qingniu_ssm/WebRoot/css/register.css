@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;
+
+}
+body {
+	background-color: #F6F6F6;
+}
+a{
+	text-decoration:none;
+	color:#F00;
+	}
+.w{
+	width: 1002px;
+	clear: left;
+	clear: both;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+img{ border:none;}
+
+.contentbox{
+	width: 1000px;
+	height: 600px;
+	margin: 0 auto;
+}
+.frombox{
+	width: 630px;
+	height: 510px;
+	padding: 20px 0;
+	float: left;
+	margin-top: 30px;
+}
+.frombox p{ padding:20px; float:left; position:relative;}
+.frombox p label{ width:110px; height:25px; display:inline-block;  text-align:right;}
+.frombox p img{ display:block; float:left;}
+.frombox em{ color:red; padding:10px;}
+.frombox input{ padding:8px 4px 8px 4px; font-size:14px; width:260px;}
+.frombox a{ text-decoration:none;}
+
+.yz label{ float:left; padding-top:6px;}
+.yz input{ float:left;}
+#codetxt{ width:96px; margin-left:4px;}
+#code{ height:36px; width:90px; margin:0 6px;font-family:Arial; font-style:italic; font-size:16px; font-weight:bold;border:0;letter-spacing:6px;color:blue; }
+#reflash{ width:60px; height:36px; font-size:12px;}
+
+#argeeId{ width:15px; height:15px; margin-top:2px;margin-left:100px;}
+.checkTitle span{ font-size:14px;}
+
+.error{
+	border: 1px solid #0CF;
+}
+
+.bg_img{float:right; margin-top:140px;}
+
+.bt{ margin-left:110px; border-radius:5px; background:#33CC66;  color:white;}
+
+.tipinfo{ font-size:12px; width:180px;  height:34px; padding:0 5px; position:absolute; border:1px solid silver; background-color:#f8f8f8; display:none; left:415px; top:20px;}
+
+.errorinfo{
+	font-size: 12px;
+	width: 180px;
+	height: 32px;
+	padding: 0 5px;
+	color: red;
+	position: absolute;
+	left: 415px;
+	top: 20px;
+	display: none;
+}#register_head  {
+	height: 90px;
+	width: 100%;
+	background-image: url(../images/registerbg.png);
+	background-repeat: repeat-x;
+	background-color: #FFF;
+}
+#register_head #register_logo img {
+	height: 90px;
+	width: auto;
+}
+#register_head #register_logo {
+	height: 90px;
+	padding-left: 100px;
+	padding-right: 10px;
+	width: 200px;
+	float: left;
+}
+#register_head #welcomeregister {
+	height: 25px;
+	width: 100px;
+	float: left;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: #333;
+	line-height: 25px;
+	margin-top: 30px;
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #666;
+	padding-left: 10px;
+}
+#register_head #login {
+	float: right;
+	height: 30px;
+	width: 150px;
+	margin-right: 15%;
+	margin-top: 30px;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	line-height: 30px;
+}
+
+
+
+
+
+#Login_Register_bottom #copyright {
+	margin-left: auto;
+	margin-right: auto;
+	height: 20px;
+	width: 330px;
+	padding-top: 10px;
+}
+
+#Login_Register_bottom #links {
+	margin-left: auto;
+	margin-right: auto;
+	height: 30px;
+	width: 900px;
+}
+#Login_Register_bottom #links a {
+	text-decoration:none;
+	line-height: 40px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #333;
+	
+}
+#Login_Register_bottom {
+	height:90px;
+	background-color: #FFF;
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须与接口的全类名一致的 -->
+<!-- id必须与接口的方法名一致的 -->
+<mapper namespace="com.qingniu.dao.GoodMapper">
+
+
+	<resultMap id="goodnameMap" type="Good">
+		<id property="goodID" column="good_id" />
+		<result property="name" column="name" />
+		<result property="desc" column="desc" />
+		<result property="brief" column="brief" />
+		<collection property="previews" javaType="ArrayList"
+			ofType="GoodPreview">
+			<result property="preID" column="pre_id" />
+			<result property="goodID" column="good_id" />
+			<result property="preImg" column="pre_img" />
+		</collection>
+	</resultMap>
+	<select id="findGoodByName" parameterType="String" resultMap="goodnameMap">
+		select
+		* from good inner join good_preview on
+		good.good_id=good_preview.good_id where good.name like #{name}
+	</select>
+
+
+
+	<resultMap id="goodMap" type="Good">
+		<id property="goodID" column="good_id" />
+		<result property="name" column="name" />
+		<result property="desc" column="desc" />
+		<result property="brief" column="brief" />
+		<!-- 以下子查询的column="good_id" 表示子查询的参数-->
+		<association property="previews" column="good_id"
+			javaType="ArrayList" select="findPreviewbyGoodID">
+		</association>
+		<association property="details" column="good_id"
+			javaType="ArrayList" select="findDetailbyGoodID">
+		</association>
+		<association property="standard" column="good_id"
+			javaType="ArrayList" select="findStandardbyGoodID">
+		</association>
+		<association property="parameter" column="parameter_id"
+			javaType="GoodParameter" select="findParambyID">
+		</association>
+		<association property="catalog" column="catalog_id"
+			javaType="Catalog" select="findCatalogbyGoodID">
+		</association>
+	</resultMap>
+	<select id="findGoodByID" parameterType="String" resultMap="goodMap">
+		select *
+		from good where good_id=#{goodid};
+	</select>
+
+
+
+
+
+	<!-- 预览图片的子查询 -->
+	<resultMap id="PreviewResultMap" type="GoodPreview">
+		<id column="pre_id" property="preID" jdbcType="INTEGER" />
+		<result property="goodID" column="good_id" jdbcType="INTEGER" />
+		<result property="preImg" column="pre_img" jdbcType="VARCHAR" />
+	</resultMap>
+	<select id="findPreviewbyGoodID" parameterType="int"
+		resultMap="PreviewResultMap">
+		select * from good_preview where good_id in(#{ID})
+	</select>
+	<!-- 详细图片描述 -->
+	<resultMap id="DetailsResultMap" type="GoodDetails">
+		<id column="details_id" property="detailsID" jdbcType="INTEGER" />
+		<result property="goodID" column="good_id" jdbcType="INTEGER" />
+		<result property="detailImg" column="detail_img" jdbcType="VARCHAR" />
+	</resultMap>
+	<select id="findDetailbyGoodID" parameterType="int"
+		resultMap="DetailsResultMap">
+		select * from good_details where good_id in(#{ID})
+	</select>
+	<!-- 规格的数据查询 -->
+	<resultMap id="StandardResultMap" type="GoodStandard">
+		<id  property="specID" column="spec_id" jdbcType="INTEGER" />
+		<result property="goodID" column="good_id" jdbcType="INTEGER" />
+		<result property="specification" column="specification" jdbcType="VARCHAR" />
+		<result property="price" column="price" jdbcType="VARCHAR" />
+	</resultMap>
+	<select id="findStandardbyGoodID" parameterType="int"
+		resultMap="StandardResultMap">
+		select * from good_standard where good_id in(#{ID})
+	</select>
+
+	<!-- 参数的查询 -->
+	<resultMap id="ParameterResultMap" type="GoodParameter">
+		<id column="param_id" property="paramID" jdbcType="INTEGER" />
+		<result column="brand" property="brand" jdbcType="VARCHAR" />
+		<result column="storage" property="storage" jdbcType="VARCHAR" />
+		<result column="shelf_life" property="shelfLife" jdbcType="VARCHAR" />
+		<result column="net_volum" property="netVolum" jdbcType="VARCHAR" />
+		<result column="places" property="places" jdbcType="VARCHAR" />
+	</resultMap>
+	<select id="findParambyID" parameterType="int" resultMap="ParameterResultMap">
+		select
+		* from good_parameter where param_id=#{paramid}
+	</select>
+	
+	<!-- 规格的查询 -->
+	<resultMap id="CatalogResultMap" type="Catalog">
+		<id column="cata_id" property="cataID" jdbcType="INTEGER" />
+		<result column="catalog" property="catalog" jdbcType="VARCHAR" />
+	</resultMap>
+	<select id="findCatalogbyGoodID" parameterType="int" resultMap="CatalogResultMap">
+		select catalog.cata_id,catalog from catalog inner join good on catalog_id=cata_id where good_id=#{goodid}
+	</select>
+	
+
+
+
+
+</mapper>

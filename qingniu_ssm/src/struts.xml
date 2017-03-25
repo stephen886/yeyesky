@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.ui.templateDir" value="template" />
+	<constant name="struts.ui.templateSuffix" value="ftl" />
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<package name="qingniu" extends="struts-default">
+
+		<!-- 用户相关的Action -->
+		<action name="user*" class="userAction" method="{1}">
+			<result name="success">/login.jsp</result>
+			<result name="allow">/index.jsp</result>
+			<result name="input">/register.jsp</result>
+		</action>
+		
+		<!--商品的Action -->
+		<action name="product*" class="productAction" method="{1}">
+			<result name="success">/product{1}.jsp</result>
+		</action>
+
+		<!--猜你喜欢 -->
+		<action name="Guessyoulike" class="guessYouLoveAction" method="guess">
+		</action>
+		
+
+		<!-- 购物车的ACTION -->
+		<action name="getCartNum" class="productAction" method="getCartNum">
+		</action>
+
+
+
+
+
+
+
+	</package>
+</struts>    
